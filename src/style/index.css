@@ -1,0 +1,193 @@
+/* =================  TOKENS  ================= */
+:root{
+  --ink:#000000;
+  --muted:#4b5563;
+  --panel:#ffffff;
+  --bg:#edf0f5;
+
+  --line:#bfc3ca;               /* gris fino general */
+  --line-strong:#000000;        /* negro para algunas reglas */
+  --grid:#8fa1c9;               /* azul de rejilla */
+
+  --red:#cc1f1f;                /* texto rojo */
+  --green:#168f36;              /* T.Cash */
+  --blueNum:#0033cc;            /* números azules */
+  --pink:#ffd7e7;               /* franja 10/25 */
+  --yellow:#fff07a;             /* propuestas */
+  --orange:#ffc86b;             /* caducidad */
+  --bluePill:#bfe8ff;           /* oferta particular */
+
+  --radius:8px;
+  --shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans";
+  font-size:12px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.app-wrap{max-width:1500px;margin:0 auto;padding:16px}
+
+/* =================  UI general  ================= */
+.btn{padding:7px 12px;border-radius:6px;border:1px solid #cfd3da;background:#0f172a;color:#fff;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn-secondary{background:#fff;color:#111;border:1px solid #cfd3da}
+
+.toolbar{
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:8px 10px;margin-bottom:10px
+}
+.toolbar-info{display:flex;gap:12px;color:var(--muted)}
+
+/* =================  Formulario  ================= */
+.form{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:12px;margin-bottom:14px
+}
+.form-title{margin:0 0 6px 0;font-size:16px}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:8px}
+.form label{display:grid;gap:4px}
+.form input{padding:8px 10px;border:1px solid #c9cdd6;border-radius:6px;background:#fff}
+.err{color:#b42318;margin-top:8px}
+
+/* =================  Hoja A4 apaisada  ================= */
+.page{display:grid;place-items:center}
+.sheet{
+  /* A4 landscape exacta */
+  width:297mm;min-height:210mm;
+  background:#fff;border:1px solid #d0d3db;box-shadow:var(--shadow);
+  /* márgenes internos del documento */
+  padding:10mm 12mm;
+  position:relative;
+}
+
+/* Impresión 1:1 */
+@page { size: A4 landscape; margin: 10mm 12mm; }
+@media print{
+  body{background:#fff}
+  .app-wrap{padding:0}
+  .sheet{box-shadow:none;border:none;width:auto;min-height:auto;padding:0}
+  .form,.toolbar{display:none}
+}
+
+/*.header{
+  display:grid;grid-template-columns:1fr auto;align-items:start;gap:6px;margin-bottom:6mm
+}
+
+// fila de personas + cajetines 
+.head-left .people{display:flex;gap:34px;align-items:center;flex-wrap:wrap}
+.people .pair{display:flex;align-items:center;gap:6px}
+.badge{width:20px;height:14px;border:2px solid #000;display:inline-block;vertical-align:middle}
+.badge-red{background:#ffd7d7}
+.badge-green{background:#c8efc8}
+.people .red{color:#cc1f1f;font-weight:700}
+.people .blue{color:#2a63da;font-weight:700}
+.people .green{color:#168f36;font-weight:700}
+.people .black{color:#000;font-weight:700} 
+
+.title-big{font-weight:700;font-size:16px;margin-top:2px}
+
+// bloque comprador/fecha 
+.head-right{display:grid;gap:4px;justify-items:end}
+.buyer{display:flex;gap:6px;align-items:baseline}
+.buyer .label{font-weight:700}
+.buyer .name{border-bottom:1px solid #000; line-height:1}
+.meta{display:flex;gap:24px;color:#000}
+
+// Regla negra superior 
+.hr{height:0;border-top:1.5px solid var(--line-strong);margin:6px 0 8px}
+
+// PROV. línea
+.prov-line{
+  display:flex;align-items:baseline;gap:6px;font-weight:700;margin:0 0 6px 0
+}
+.prov-line .code{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:1.5px}
+.prov-line .name{ text-transform:uppercase; text-decoration:underline; text-decoration-thickness:1.5px; text-underline-offset:1.5px; }
+
+// Textos rojos (NO banda, NO borde)
+.redlines{
+  display:grid;grid-template-columns:1fr auto;align-items:start;margin:0 0 6px 0
+}
+.redlines .center{
+  justify-self:center;text-align:center;color:var(--red);font-weight:700;line-height:1.05
+}
+.redlines .right{
+  color:var(--red);font-weight:700;align-self:start
+}*/
+
+/* =================  Cards  ================= */
+.card{border:1px solid var(--line);border-radius:8px;padding:8px;margin-bottom:6px;background:#fff}
+
+/* =================  Panel artículo (horizontal)  ================= */
+.art-wrap{position:relative}
+.grid-head,
+.art{
+  grid-template-columns:120px 1fr 60px 90px 80px 80px 50px 40px;
+}
+.grid-head{
+  display:grid;gap:6px;
+  font-weight:700;border-bottom:1px dotted #9ca3af;padding-bottom:4px;margin-bottom:6px
+}
+
+.art{
+  display:grid;gap:6px;align-items:start
+}
+.art .muted{color:#6b7280}
+.art .row{display:flex;justify-content:space-between;gap:8px}
+.art .name{font-weight:700;font-size:13px;margin:2px 0 2px;letter-spacing:.1px}
+.art .numcell{
+  display:flex;align-items:center;justify-content:center;font-weight:700;min-height:38px;
+}
+
+/* Columna lateral derecha externa */
+.side-out{
+  position:absolute; right:-220px; top:0; width:200px;
+  padding-left:12px; border-left:1px dashed #c7c7c7; color:#333
+}
+.side-out .lab{color:#6b7280}
+.side-out .num{float:right}
+.side-out .num.green{color:var(--green);font-weight:700}
+
+/* =================  Bloques ofertas/fechas  ================= */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.pill{display:inline-block;padding:2px 6px;border-radius:4px;font-weight:700}
+.pill-blue{background:var(--bluePill)}
+.pill-yellow{background:var(--yellow)}
+.pill-orange{background:var(--orange)}
+
+/* =================  Tabla almacenes  ================= */
+.tbl{padding:4px; position:relative}
+.tbl-row,.tbl-head{
+  display:grid;grid-template-columns:70px repeat(auto-fit,minmax(46px,1fr));gap:2px;align-items:stretch
+}
+.th,.td,.tl{
+  border:1px solid var(--grid);background:#fff;padding:3px 4px;text-align:center;font-weight:700
+}
+.tl{background:#f1f1f1;text-align:right}
+.th{background:#ebf1ff}
+.small{font-size:11px;line-height:1}
+.num-blue{color:var(--blueNum);font-weight:800}
+.bg-yellow{background:var(--yellow)}
+.bg-pink{background:var(--pink)}
+.red-mark{background:#ff2a2a;width:8px;height:18px;margin:0 auto;border-radius:1px}
+
+/* Punteado vertical central (corte) */
+.tbl::after{
+  content:""; position:absolute; top:0; bottom:0; left:50%;
+  width:0; border-right:1px dashed #7a7a7a; opacity:.8; pointer-events:none;
+}
+
+/* =================  Pie  ================= */
+.footer{
+  display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-top:6px
+}
+.footer > div{padding:6px 4px}
+.right{justify-self:end}

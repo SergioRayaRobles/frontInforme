@@ -1,0 +1,39 @@
+.boton {
+  padding: 6.39px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12pt;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  margin: 4px;
+  width: 130pt;
+}
+
+/* Estilos por tipo */
+.boton.primario {
+  background-color: #007bff;
+  color: white;
+}
+
+.boton.primario:hover {
+  background-color: #0066cc;
+}
+
+.boton.secundario {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.boton.secundario:hover {
+  background-color: #d5d5d5;
+}
+
+.boton.peligro {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.boton.peligro:hover {
+  background-color: #d93636;
+}

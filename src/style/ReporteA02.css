@@ -1,0 +1,700 @@
+/* =================  Cabecera  ================= */
+
+.cabecera .superior {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    border-bottom: #000000 2pt solid;
+}
+
+.superior p {
+    margin-bottom: 3px;
+}
+
+.superior .nombre {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 05rem;
+    font-family: arial;
+    font-size: 11pt;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.infoGeneral {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.2rem;
+}
+
+.infoGeneral p {
+    margin: 0px;
+}
+
+.tituloInfo {
+    font-size: 12.08pt;
+    font-weight: bold;
+    margin-right: 100pt;
+}
+
+.comprador #titu {
+    font-size: 12.08pt;
+    font-weight: bold;
+    margin-right: 18pt;
+    margin-left: 26pt;
+}
+
+.comprador {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.comprador #nomCom {
+	font-size: 11pt;
+	border-bottom: #000000 1pt solid;
+	margin-bottom: 1px;
+	font-weight: lighter;
+	width: 4.9cm;
+}
+
+.meta {
+	display: flex;
+	font-size: 10.5pt;
+	font-weight: bold;
+}
+
+.meta p {
+	margin-right: 0.7rem;
+}
+
+.tituloInfo {
+	font-size: 13.08pt;
+	font-weight: bold;
+}
+
+.nombre p {
+	display: flex;
+	align-items: center;   
+}
+
+.nombre .badge{
+	width:0.910cm;
+	height:0.503cm;
+	border:2.3pt solid #000;
+	border-top: 2pt solid #000;
+	display:inline-block;
+	margin-left: 13pt;
+}
+
+.nombre, .infoGeneral {
+	width: 100%;
+	height: 100%;
+}
+
+/* =================  Cabecera Inferior  ================= */
+.cabecera .inferior {
+	display: flex;
+	font-size: 13.08pt;
+	font-weight: bold;
+	border-bottom: #000000 2pt solid;
+	margin-bottom: 0px;
+	color: #000000;
+}
+
+.cabecera .inferior p {
+	margin: 0px;
+}
+
+.inferior .provInfo {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	padding-bottom: 4pt;
+	margin-left: 26pt;
+	margin-top: 12pt;
+}
+
+.provInfo #provInfo {
+	margin-left: 10pt;
+	border-bottom: #000000 1pt solid;
+	width: 10.5cm;
+	font-weight: lighter;
+	font-size: 11.3pt;
+}
+
+.inferior .responsable {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.responsable p {
+	font-weight: lighter;
+	font-size: 10pt;
+	font-weight: medium;
+	color: #ff2727;
+	padding-left: 34pt;
+	padding-top: 7pt;
+}
+
+/* ==================== Fin Cabecera  ==================== */
+
+
+
+/* ======================  Cuerpo  ====================== */
+
+.columTit{
+	display: flex;
+	width: 100%;
+	border-bottom: #000000 2pt solid;
+}
+
+.columTit #col1{
+	display: flex;
+	width: 25%;
+	padding: 3pt 0pt 3pt 3pt;
+}
+
+#col1 #pCod{
+	font-weight: bold;
+}
+
+#col1 #pArt{
+	font-weight: bold;
+	font-size: 11.4pt;
+	margin-left: 70pt;
+}
+
+.columTit #col2{
+	display: flex;
+	width: 26%;
+	padding-left: 16pt;
+	padding-right: 10pt;
+	padding: 3pt 0pt 3pt 0pt;
+}
+
+#col2 div{
+	padding: 2pt;
+	padding-left: 5pt;
+	text-align: left;
+	font-weight: bold;
+	font-size: 8.5pt;
+}
+
+#col2 #txtCol2{
+	font-weight: lighter;
+	margin-left: 12pt;
+}
+
+.columTit #col3{
+	display: flex;
+	justify-content:space-around;
+	text-align: center;
+	width: 49%;
+	border-right: #b4b2b2 1pt solid;
+}
+
+#col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border-left: #b4b2b2 1pt solid;
+	width: 100%;
+}
+
+#col3 p{
+	margin: 0px;
+	font-size: 8.5pt;
+}
+
+
+/* ======================  Tabla Datos  ====================== */
+
+.datos {
+	display: flex;
+	padding: 6px 3px;
+	border-bottom: #b4b2b2 1pt solid;
+}
+
+.datos #artData {
+	display: flex;
+	flex-direction: column;
+	font-size: 8.8pt;
+	width: 22%;
+}
+
+.datos #artData .row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8px;
+}
+
+.datos #artData #codArt {
+	font-weight: bold;
+	font-size: 8.8pt;
+}
+
+.datos #artData #nomArt {
+	margin-left: 10px;
+	font-size: 7.3pt;
+}
+
+.datos #artData .alta {
+	font-weight: bold;
+	padding-left: 17%;
+}
+
+.datos #artData .alta #altaData {
+	margin-left: 20px;
+}
+
+.datos #artData .ean {
+	font-weight: bold;
+	padding-left: 40%;
+}
+
+.datos #artData .ean #eanData {
+	margin-left: 15pt;
+}
+
+.datos #artData .ifa {
+	margin-top: 4px;
+	font-weight: bold;
+}
+
+.datos #artData .fecDH {
+	font-weight: bold;
+	align-items: center;
+}
+
+.datos #artData .diasCad {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.datos #artData .diasCad #numDiasCad {
+	margin-left: 20px;
+	color: blue;
+}
+
+.datos #artData .diasCad #stock {
+	margin-left: 40px;
+}
+
+.datos #artData .diasCad #numStock {
+	margin-left: 15px;
+	color: red;
+}
+
+.datos #artData .ofertaPart {
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 2px;
+}
+
+.datos #artData .p19Des p{
+	font-weight: bold;
+	background-color: rgb(0, 204, 255);
+	color: black;
+	padding: 6px 10px 4px 2px;
+}
+
+.datos #artData .fecDHValue{
+	font-weight: bold;
+	background-color: rgb(255, 153, 0);
+	margin-left: 20px;
+	padding: 4px 11px;
+}
+
+.datos #artData .fecCadPicking{
+	font-size: 7.3pt;
+	font-weight: bold;
+	align-items: center;
+	margin-bottom: 2px;
+}
+
+.datos #artData .fecCadPicking #fecCadPickingValue{
+	font-weight: bold;
+	background-color: rgb(255, 153, 0);
+	margin-left: 6px;
+	padding: 4px 4px;
+}
+
+
+.datos #genData {
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+	width: 29%;
+}
+
+.datos #genData p {
+	margin-bottom: 6.5px;
+	font-size: 8.4pt;
+}
+
+.datos #genData .row {
+	display: flex;
+	flex-direction: row;
+}
+
+/* ====== T.A.M. ====== */
+.datos #genData #lblTAM {
+	font-size: 7pt;
+}
+
+.datos #genData #valAfcant {
+	margin-left: 3.5%;
+	width: 10px;
+	text-align: right;
+
+}
+
+.datos #genData #valAfcant p {
+	margin-left: 2.7%;
+	font-weight: bold;
+	width: 10px;
+	text-align: right;
+}
+
+.datos #genData #valVentaTotal {
+	margin-left: 3%;
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #valVtaSer {
+	margin-left: 1.8%;
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #valVtaCen {
+	margin-left: 1.9%;
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #valCenCash {
+	margin-left: 6%;
+	font-weight: bold;
+	width: 10px;
+	text-align: right;
+}
+
+.datos #genData #valBaseAltura {
+	margin-left: 8.5%;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #valTotalStock {
+	margin-left: 23px;
+	color: rgb(0, 128, 0);
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #diaStock {
+	margin-left: 32px;
+	color: rgb(0, 57, 255);
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #diasStockCentral {
+	margin-left: 50.4px;
+	color: rgb(0, 57, 255);
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #diasStockCash {
+	color: rgb(0, 57, 255);
+	font-weight: bold;
+	width: 34px;
+	text-align: right;
+}
+
+.datos #genData #stockCentral {
+	margin-left: 68px;
+	color: rgb(0, 128, 0);
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #a9ot06 {
+	margin-left: 100px;
+	background-color: rgb(255, 204, 153);
+	width: 32px;
+	height: 17px;
+	text-align: right;
+}
+
+.datos #genData #artt06 {
+	margin-left: 134px;
+	font-weight: bold;
+	width: 32px;
+	height: 17px;
+	text-align: right;
+}
+
+.datos #genData #margenCentral {
+	margin-left: 75px;
+	font-weight: bold;
+	color: rgb(0, 128, 0);
+	width: 32px;
+	height: 17px;
+	text-align: right;
+}
+
+.datos #genData #stsppu {
+	margin-left: 75px;
+	font-weight: bold;
+	color: rgb(0, 57, 255);
+	width: 32px;
+	height: 17px;
+	text-align: right;
+}
+
+.datos #genData #valFECentral {
+	margin-left: 147px;
+	color: rgb(255, 0, 0);
+	width: 32px;
+	height: 17px;
+	text-align: right;
+}
+
+.datos #genData #valOrisco {
+	font-weight: bold;
+}
+
+.datos #genData #totalPteProv {
+	margin-left: 5px;
+	color: rgb(0, 57, 255);
+	font-weight: bold;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+}
+
+.datos #genData #totalPteCent {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	width: 32px;
+	text-align: right;
+}
+
+.datos #genData #total5M {
+	margin-left: 3px;
+	color: rgb(0, 128, 0);
+	font-weight: bold;
+	width: 38px;
+	text-align: right;
+}
+
+.datos #genData #stockCash {
+	margin-left: 10px;
+	color: rgb(0, 128, 0);
+	width: 28px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData .ValTotalDiaIni {
+	margin-left: 54px;
+	padding-top: 3px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData .valCentralDiaFin {
+	margin-left: 68.2px;
+	padding-top: 3px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData .valCentralDiaIni {
+	margin-left: 68px;
+	padding-top: 3px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData .ValTotalDiaFin {
+	margin-left: 54px;
+	padding-top: 5px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+}
+
+.datos #almData {
+	display: flex;
+	flex-direction: row;
+	width: 49%;
+}
+
+.datos #almData .Col div{
+	text-align: right;
+	font-size: 8.4pt;
+	font-weight: bold;
+	width: 33.59px;
+	height: 18.65px;
+	padding-right: 2.5px;
+	padding-top: 1px;
+	border-right:#b4b2b2 1pt solid;
+}
+
+.datos #almData .Col {
+	padding: 0px;
+	margin: 0px;
+}
+
+.datos #almData .ValStock {
+	color: rgb(0, 128, 0);
+}
+
+.datos #almData .valDS {
+	color: rgb(0, 57, 255);
+}
+
+.datos #almData .ValMargen {
+	color: rgb(0, 128, 0);
+}
+
+.datos #almData .ValPteProv {
+	color: rgb(0, 57, 255);
+}
+
+.datos #almData .ValOfer {
+	font-weight: lighter !important;
+	background-color: rgb(255, 204, 153);
+}
+
+.datos #almData .Val5M {
+	background-color: rgb(204, 255, 204);
+}
+
+.datos #almData .ValFE {
+	font-weight: lighter !important;
+	color: rgb(255, 0, 0);
+}
+
+.datos p {
+	margin: 0px;
+}
+
+.valPositivo {
+  background-color: white;
+  color: rgb(0, 57, 255);
+  font-weight: bold;
+}
+
+.valNegativo {
+  background-color: rgb(255, 255, 0);
+  color: black;
+  font-weight: normal;
+}
+
+.ValExiste.baja {
+  background-color: red;
+  font-weight: bold;
+}
+
+.datos #genData #PInic {
+	margin-left: 5px;
+	padding-top: 3px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData #PFin {
+	margin-left: 8px;
+	padding-top: 3px;
+	width: 38px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData #valPFinIni {
+	padding-top: 3px;
+	width: 30px;
+	height: 18px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.datos #genData .ValExiste {
+	margin-left: 56.4%;
+	text-align: right;
+	font-weight: bold;
+	width: 33.5px;
+	height: 18.65px;
+	padding-right: 2.5px;
+	padding-top: 1px;
+}
+
+.pie {
+	font-weight: bold;
+}
+
+.fPie {
+	display: flex;
+	color: rgb(0, 128, 0);
+	text-align: right;
+}
+
+.fPie .titPie {
+	text-align: left;
+}
+
+.fPie #total5MPie {
+	width: 38px;
+	margin-right: 198px;
+	align-items: right;
+}
+
+.fPie #M5Data {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fPie #M5Data div{
+	text-align: right;
+	font-weight: bold;
+	width: 33.59px;
+	height: 18.65px;
+	padding-right: 2.5px;
+	padding-top: 1px;
+}
+
+.pie .titPie {
+	margin-left: 5%;
+	width: 23%;
+	align-items: right;
+	color: #000;
+}
+
+
+
